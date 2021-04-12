@@ -28,3 +28,16 @@ for (let i = str.length - 1; i >= 0; i--) {
 return newStr;
 }
 console.log("Reverse a string Without using any methods ",  reverseAStr("Hello world")); 
+
+// This solution I came across through LinkedIn using Spread 
+function reverseStrWithSpread (str) {
+  let newStr = [...str].reverse().join("");
+  return newStr;
+}
+console.log(reverseStrWithSpread("Hello Javascript!"));
+
+// Problem 3 - Repeat a string 
+function repeatStr (Str) {
+
+}
+console.log(repeatStr("Jojo"));
