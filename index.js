@@ -21,6 +21,16 @@ return maxNumber;
 }
 console.log("Max number is ", maxNum([2,3,4,5]));
 
+// Sum of array
+
+function sumArray (arr) {
+  let sum = 0;
+  for( let i =0; i < arr.length; i++) {
+    sum += arr[i];
+  }
+  return sum;
+}
+console.log("Sum of array is ", sumArray([2,3,4,5]));
 // Problem 2 : Reverse a string
 
 function reverseStr (str) {
