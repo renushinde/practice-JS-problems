@@ -6,7 +6,7 @@ function reverseArr (arr) {
   }
   return newArr; 
 }
-console.log(reverseArr([2, 3, 4]));
+console.log("Reverse array: ", reverseArr([2, 3, 4]));
 
 // Largest integer in the array
 function maxNum (arr) {
@@ -60,7 +60,11 @@ function reverseStrWithSpread (str) {
 console.log(reverseStrWithSpread("Hello Javascript!"));
 
 // Problem 3 - Repeat a string 
-function repeatStr (Str) {
-
+function repeatStr (str, num) {
+  let newStr = "";
+  for ( let i = 0; i < num; i ++) {
+    newStr += str;
+  }
+  return newStr;
 }
-console.log(repeatStr("Jojo"));
+console.log("Repeat string: " , repeatStr("Jojo ", 4));
