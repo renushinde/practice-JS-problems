@@ -1,3 +1,5 @@
+// ARRAY PROBLEMS
+
 // Problem 1 : Reverse an array
 function reverseArr (arr) {
   let newArr = [];
@@ -31,6 +33,9 @@ function sumArray (arr) {
   return sum;
 }
 console.log("Sum of array is ", sumArray([2,3,4,5]));
+
+
+// STRING PROBLEMS
 // Problem 2 : Reverse a string
 
 function reverseStr (str) {
@@ -68,3 +73,16 @@ function repeatStr (str, num) {
   return newStr;
 }
 console.log("Repeat string: " , repeatStr("Jojo ", 4));
+
+// appendToString
+function appendToString (str1, str2) {
+  return str1 + str2;
+}
+
+console.log(appendToString("Hello", " World!")); // "Hello World!"
+
+// prependToString
+function prependToString (str1, str2) {
+  return str2 + str1;
+}
+console.log(prependToString(' awesome', 'very' )); // 'veryawesome'
