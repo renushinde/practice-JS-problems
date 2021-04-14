@@ -86,3 +86,11 @@ function prependToString (str1, str2) {
   return str2 + str1;
 }
 console.log(prependToString(' awesome', 'very' )); // 'veryawesome'
+
+// charAt
+function charAt (str, index) {
+ for ( let i = 0; i < str.length; i++ ) {
+   return str[index];
+ }
+}
+console.log(charAt('awesome', 2)); // 'e'
