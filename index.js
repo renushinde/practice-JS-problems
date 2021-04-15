@@ -126,4 +126,13 @@ function stringLastIndexOf(word, char) {
 }
 
 console.log("The last index is: ", stringLastIndexOf('awesome', 'z'));
- // 6
+ 
+// removeFromString
+function removeFromString(str, startIndex, num) {
+  
+    let arr = str.split('');
+    arr.splice(startIndex, num);
+    return arr.join('');
+  
+}
+console.log("Remove from string: ", removeFromString('Elie', 2, 2)); // 'El'
