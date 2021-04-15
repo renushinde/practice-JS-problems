@@ -106,11 +106,24 @@ console.log(stringIncludes('awesome', 'e')); // true
 
 // stringIndexOf
 function stringIndexOf(word, char) {
-  for ( let i =0; i < word.length; i++) {
+  for ( let i = 0; i < word.length; i++) {
     if(word[i] === char) {
       return i;
     }
   }
-  return false;
+  return -1;
 }
 console.log(stringIndexOf('awesome', 's')); // 2
+
+// stringLastIndexOf
+function stringLastIndexOf(word, char) {
+  for ( let i = word.length - 1; i >= 0; i--) {
+    if(word[i] === char) {
+      return i;
+    }
+  }
+  return -1;
+}
+
+console.log("The last index is: ", stringLastIndexOf('awesome', 'z'));
+ // 6
