@@ -93,4 +93,13 @@ function charAt (str, index) {
    return str[index];
  }
 }
-console.log(charAt('awesome', 2)); // 'e'
+console.log("charAt: ", charAt('awesome', 2)); // 'e'
+
+// string includes a character
+function stringIncludes(str, character) {
+  for ( let i =0; i < str.length; i++) {
+    if(str[i] === character)return true;
+  }
+  return false;
+}
+console.log(stringIncludes('awesome', 'e')); // true
