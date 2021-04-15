@@ -103,3 +103,14 @@ function stringIncludes(str, character) {
   return false;
 }
 console.log(stringIncludes('awesome', 'e')); // true
+
+// stringIndexOf
+function stringIndexOf(word, char) {
+  for ( let i =0; i < word.length; i++) {
+    if(word[i] === char) {
+      return i;
+    }
+  }
+  return false;
+}
+console.log(stringIndexOf('awesome', 's')); // 2
