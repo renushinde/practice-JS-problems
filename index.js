@@ -149,3 +149,16 @@ function slice (arr, begin, end) {
   return newArr;
 }
 console.log("Slice: ", slice([1,2,3,4,5], 0)); // [1,2]
+
+// countValues
+
+function countValues(arr, num) {
+  let counter = 0;
+  for (let i =0; i < arr.length; i++) {
+    if(arr[i] === num) counter ++;
+  }
+  return counter;
+}
+
+console.log("The number appeared:", countValues([4,1,1,4,2,3,4,4], 1)); // 4
+
