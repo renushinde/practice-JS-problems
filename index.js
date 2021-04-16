@@ -136,3 +136,16 @@ function removeFromString(str, startIndex, num) {
   
 }
 console.log("Remove from string: ", removeFromString('Elie', 2, 2)); // 'El'
+
+// slice
+function slice (arr, begin, end) {
+  if(end === undefined || end > arr.length) {
+    end = arr.length;
+  }
+  let newArr = [];
+  for (let i = begin; i < end; i++) {
+    newArr.push( arr[i]);
+  }
+  return newArr;
+}
+console.log("Slice: ", slice([1,2,3,4,5], 0)); // [1,2]
