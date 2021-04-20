@@ -173,3 +173,15 @@ function squareEvenNumbers(arr) {
   return squaredNumber;
 }
 console.log("The sum of squares of even number is:", squareEvenNumbers([1,2,4,8]));
+
+// countNumbers
+function countNumbers (arr) {
+  let counter = 0;
+  for ( let i =0; i < arr.length; i++) {
+      if(Number(arr[i])){
+        counter++;
+      }
+  }
+  return counter;
+}
+console.log("The numbers in a string of array are:", countNumbers([32, 67, '55', 'awesome', 'test', '100', '45']));
