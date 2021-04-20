@@ -162,3 +162,14 @@ function countValues(arr, num) {
 
 console.log("The number appeared:", countValues([4,1,1,4,2,3,4,4], 1)); // 4
 
+// squareEvenNumbers
+function squareEvenNumbers(arr) {
+  let squaredNumber = 0;
+  for ( let i =0; i < arr.length; i++) {
+    if(arr[i] % 2 === 0) {
+    squaredNumber +=  arr[i] * arr[i];
+    }
+  }
+  return squaredNumber;
+}
+console.log("The sum of squares of even number is:", squareEvenNumbers([1,2,4,8]));
