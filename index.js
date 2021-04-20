@@ -22,6 +22,54 @@ function maxNum (arr) {
 return maxNumber;
 }
 console.log("Max number is ", maxNum([2,3,4,5]));
+// slice
+function slice (arr, begin, end) {
+  if(end === undefined || end > arr.length) {
+    end = arr.length;
+  }
+  let newArr = [];
+  for (let i = begin; i < end; i++) {
+    newArr.push( arr[i]);
+  }
+  return newArr;
+}
+console.log("Slice: ", slice([1,2,3,4,5], 0)); // [1,2]
+
+// countValues
+
+function countValues(arr, num) {
+  let counter = 0;
+  for (let i =0; i < arr.length; i++) {
+    if(arr[i] === num) counter ++;
+  }
+  return counter;
+}
+
+console.log("The number appeared:", countValues([4,1,1,4,2,3,4,4], 1)); // 4
+
+// squareEvenNumbers
+function squareEvenNumbers(arr) {
+  let squaredNumber = 0;
+  for ( let i =0; i < arr.length; i++) {
+    if(arr[i] % 2 === 0) {
+    squaredNumber +=  arr[i] * arr[i];
+    }
+  }
+  return squaredNumber;
+}
+console.log("The sum of squares of even number is:", squareEvenNumbers([1,2,4,8]));
+
+// countNumbers
+function countNumbers (arr) {
+  let counter = 0;
+  for ( let i =0; i < arr.length; i++) {
+      if(Number(arr[i])){
+        counter++;
+      }
+  }
+  return counter;
+}
+console.log("The numbers in a string of array are:", countNumbers([32, 67, '55', 'awesome', 'test', '100', '45']));
 
 // Sum of array
 
@@ -137,51 +185,8 @@ function removeFromString(str, startIndex, num) {
 }
 console.log("Remove from string: ", removeFromString('Elie', 2, 2)); // 'El'
 
-// slice
-function slice (arr, begin, end) {
-  if(end === undefined || end > arr.length) {
-    end = arr.length;
-  }
-  let newArr = [];
-  for (let i = begin; i < end; i++) {
-    newArr.push( arr[i]);
-  }
-  return newArr;
+// Remove Vowels
+function removeVowels(str) {
+  
 }
-console.log("Slice: ", slice([1,2,3,4,5], 0)); // [1,2]
-
-// countValues
-
-function countValues(arr, num) {
-  let counter = 0;
-  for (let i =0; i < arr.length; i++) {
-    if(arr[i] === num) counter ++;
-  }
-  return counter;
-}
-
-console.log("The number appeared:", countValues([4,1,1,4,2,3,4,4], 1)); // 4
-
-// squareEvenNumbers
-function squareEvenNumbers(arr) {
-  let squaredNumber = 0;
-  for ( let i =0; i < arr.length; i++) {
-    if(arr[i] % 2 === 0) {
-    squaredNumber +=  arr[i] * arr[i];
-    }
-  }
-  return squaredNumber;
-}
-console.log("The sum of squares of even number is:", squareEvenNumbers([1,2,4,8]));
-
-// countNumbers
-function countNumbers (arr) {
-  let counter = 0;
-  for ( let i =0; i < arr.length; i++) {
-      if(Number(arr[i])){
-        counter++;
-      }
-  }
-  return counter;
-}
-console.log("The numbers in a string of array are:", countNumbers([32, 67, '55', 'awesome', 'test', '100', '45']));
+console.log("New String with Vowels removed: ", removeVowels('Hello')); // hll
