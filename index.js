@@ -191,11 +191,11 @@ function removeVowels(str) {
   let newArr = [];
   let vowels = ["a", "e", "i", "o", "u"];
   for(let i = 0; i < arr.length; i++ ){
-    if(arr[i].includes(vowels[i])) {
+    if(!(vowels.includes(arr[i]))) {
       newArr.push(arr[i])
     }
   }
 return newArr.join("");
 }
-console.log("New String with Vowels removed:", removeVowels('Hollo')); // hll
+console.log("New String with Vowels removed:", removeVowels('Hello')); // hll
 //////
