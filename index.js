@@ -187,6 +187,14 @@ console.log("Remove from string: ", removeFromString('Elie', 2, 2)); // 'El'
 
 // Remove Vowels
 function removeVowels(str) {
-  
+  let arr = str.split("");
+  let newArr = [];
+  let vowels = ["a", "e", "i", "o", "u"];
+  for(let i = 0; i < arr.length; i++ ){
+    if(arr[i].includes(vowels[i])) {
+      newArr.push(arr[i])
+    }
+  }
+return newArr.join("");
 }
-console.log("New String with Vowels removed: ", removeVowels('Hello')); // hll
+console.log("New String with Vowels removed:", removeVowels('Hollo')); // hll
