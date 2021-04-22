@@ -198,3 +198,4 @@ function removeVowels(str) {
 return newArr.join("");
 }
 console.log("New String with Vowels removed:", removeVowels('Hollo')); // hll
+//////
