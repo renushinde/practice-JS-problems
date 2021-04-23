@@ -199,7 +199,8 @@ return newArr.join("");
 }
 console.log("New String with Vowels removed:", removeVowels('Hello')); // hll
 
-// Find the duplicate
+// OBJECT PROBLEMS
+// Find the duplicates
 function findTheDuplicate(arr){
   let counter = {}
   for(let i = 0; i < arr.length; i++){
@@ -212,10 +213,24 @@ function findTheDuplicate(arr){
     }
   }
   for(let key in counter){
-    if(counter[key] > 2) 
-    console.log(key + " counted: " + counter[key] + " times.")
+    if(counter[key] >= 2) 
+    //console.log(key + " counted: " + counter[key] + " times.")
+    console.log("The duplicates are: " + key );
    
   }
     console.log(counter);
 }
-console.log(findTheDuplicate([1,4,4,2,3,3,1,4,3,12]));
+console.log(findTheDuplicate([2,2,3,3,3,4]));
+
+// Remove Duplicates 
+let a = [2,3,4,3,5,4];
+let b = [];
+// Brute Force Approach
+
+for ( let i = 0; i < a.length; i++) {
+  if(b.indexOf(a[i]) === -1) {
+    b.push(a[i]);
+  }
+}
+console.log("Unique values/ no duplicates", b);
+// complexity is n^2
