@@ -208,13 +208,14 @@ function findTheDuplicate(arr){
      
     } else {
       counter[arr[i]] = 1;
-      console.log(counter);
+      
     }
   }
   for(let key in counter){
-    if(counter[key] > 1) return +key
+    if(counter[key] > 2) 
+    console.log(key + " counted: " + counter[key] + " times.")
    
   }
-    
+    console.log(counter);
 }
-console.log(findTheDuplicate([1,2,3,3,1,4,3,12]));
+console.log(findTheDuplicate([1,4,4,2,3,3,1,4,3,12]));
